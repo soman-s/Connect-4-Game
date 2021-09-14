@@ -9,12 +9,14 @@ The program allows two users to play connect 4 against each other from two diffe
 
 ## How to Run
 1. clone repository to your pc
-2. open the folder CSCI2020-Final in Intellij
+2. open the folder Connect4Game-main in Intellij
 3. right click the resources folder >> select mark directory as >> select resources root
-4. press f4 to open module settings
+4. open project structure settings from the File menu
 5. make sure that javafx has been added as a module and that there is a version of java selected (we used 11)
-6. run ServerMain.java
-7. run Main.java 
+6. add the following VM options: --module-path "path to JavaFX lib on your computer" --add-modules javafx.controls,javafx.fxml,javafx.media
+7. enable the "allow instances option" in edit configurations menu 
+8. run ServerMain.java
+9. run Main.java 
 
 ## Other Resources
 [referenced material 1](https://stackoverflow.com/questions/1842734/how-to-asynchronously-call-a-method-in-java)
